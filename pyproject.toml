@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "jpeg-viewer"
+version = "0.1.0"
+description = ""
+authors = ["Sławomir Paszko <folkus@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pillow = "^10.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+jpeg_viewer = "jpeg_viewer.cli:main"
